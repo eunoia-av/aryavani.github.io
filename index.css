@@ -31,6 +31,8 @@ section.landing {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+
+  position: relative;
 }
 
 section.landing>div.image-attributes {
@@ -72,6 +74,14 @@ div.header__contact {
   gap: 1.5rem;
   justify-content: center;
   margin: 2rem 0;
+}
+
+div.header__website-gist {
+  color: white;
+  font-size: clamp(2rem, 4vw, 3rem);
+  position: absolute;
+  bottom: 2rem;
+  left: 5%;
 }
 
 header>a:hover {
@@ -126,8 +136,8 @@ section.therapist>div.therapist__inner {
 .therapist-img {
   padding-top: 1rem;
   height: auto;
-  max-width: 50%;
-  max-height: 400px;
+  max-width: 30%;
+  max-height: 350px;
   margin: 0 auto;
 }
 
