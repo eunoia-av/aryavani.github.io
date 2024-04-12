@@ -31,6 +31,8 @@ section.landing {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+
+  position: relative;
 }
 
 section.landing>div.image-attributes {
@@ -74,10 +76,17 @@ div.header__contact {
   margin: 2rem 0;
 }
 
+div.header__website-gist {
+  color: white;
+  font-size: clamp(2rem, 4vw, 3rem);
+  position: absolute;
+  bottom: 2rem;
+  left: 5%;
+}
+
 header>a:hover {
   cursor: pointer;
 }
-
 
 
 /* NAV */
@@ -102,38 +111,76 @@ nav>ul>li>a {
 
 
 
-/* ABOUT SECTION */
-section.about {
-  background-color: #F1E9E2;
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-}
-
+/* ABOUT THE THERAPIST SECTION */
 section.therapist {
   background-color: #51645e;
   color: white;
 }
 
+section.therapist>div.therapist__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  section.therapist>div.therapist__inner {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.therapist-img {
+  padding-top: 1rem;
+  height: auto;
+  max-width: 30%;
+  max-height: 350px;
+  margin: 0 auto;
+}
+
+div.therapist-info {
+  padding: 0.5rem 2rem 2rem 2rem;
+}
+
+h2.therapist__heading {
+  margin: 0 0 0.8rem 0;
+  font-size: clamp(1.2rem, 2vw, 1.8);
+  text-align: center;
+}
+
+p.therapist-info__text {
+  font-family: 'Open sans', sans-serif;
+  line-height: 1.5;
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+  padding-bottom: 1.2rem;
+  margin: 0;
+  text-align: center;
+}
+
+
+
+/* ABOUT EUNOIA SECTION */
+section.about {
+  background-color: #F1E9E2;
+  text-align: center;
+  padding: 2rem;
+}
+
 section.about>h2 {
   margin: 0 0 0.8rem 0;
-  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-size: clamp(1.2rem, 2vw, 1.8);
 }
 
 section.about>p {
   max-width: 800px;
   font-family: 'Open sans', sans-serif;
   line-height: 1.5;
-  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
   margin: 1.2rem auto;
 }
-
-section.about>img {
-  position: absolute;
-  left: 2rem;
-  bottom: 0rem;
-}
-
 
 
 /* UNIVERSAL CLASSES */
