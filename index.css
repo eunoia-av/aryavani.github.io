@@ -202,17 +202,20 @@ section.about>p {
 }
 
 .book-session-btn {
-  border-radius: 1rem;
+  border-radius: 2rem;
+  border: 0;
   padding: 1rem 2rem;
   font-family: "Roxborough-CF", sans-serif;
-  background-color: var(--secondary);
-  transition: background-color 200ms ease-in-out;
+  background-color: var(--primary);
+  color: var(--secondary);
+  transition: background-color 100ms ease-in-out;
+  letter-spacing: 1.1px;
 }
 
 .book-session-btn:hover {
   cursor: pointer;
-  background-color: var(--primary);
-  color: var(--secondary);
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
 
