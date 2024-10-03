@@ -3,6 +3,12 @@
   src: url(./fonts/Roxborough-CF.ttf);
 }
 
+:root {
+  --primary: #51645e;
+  --primary-faded: #7b968d;
+  --secondary: #F1E9E2
+}
+
 html,
 body {
   margin: 0;
@@ -43,9 +49,9 @@ section.landing>div.image-attributes {
 
 section.landing>div.image-attributes>p {
   color: white;
-  font-size: 8px;
+  font-size: 6px;
   padding: 0;
-  margin: 0;
+  margin: 2rem 0;
   letter-spacing: 1.5px;
 }
 
@@ -113,8 +119,10 @@ nav>ul>li>a {
 
 /* ABOUT THE THERAPIST SECTION */
 section.therapist {
-  background-color: #51645e;
+  background-color: var(--primary);
   color: white;
+  border-radius: 1rem 1rem 0 0;
+  transform: translateY(-1.5rem);
 }
 
 section.therapist>div.therapist__inner {
@@ -164,9 +172,11 @@ p.therapist-info__text {
 
 /* ABOUT EUNOIA SECTION */
 section.about {
-  background-color: #F1E9E2;
+  background-color: var(--secondary);
   text-align: center;
   padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  transform: translateY(-1.5rem);
 }
 
 section.about>h2 {
@@ -180,6 +190,29 @@ section.about>p {
   line-height: 1.5;
   font-size: clamp(0.8rem, 1.2vw, 1rem);
   margin: 1.2rem auto;
+}
+
+/* TOPMATE BUTTON */
+.topmate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.book-session-btn {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  font-family: "Roxborough-CF", sans-serif;
+  background-color: var(--secondary);
+  transition: background-color 200ms ease-in-out;
+}
+
+.book-session-btn:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 
